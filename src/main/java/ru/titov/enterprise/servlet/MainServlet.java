@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 public class MainServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/mainJsp.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/main.jsp");
         dispatcher.forward(req, resp);
     }
 

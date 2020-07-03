@@ -1,19 +1,21 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: vladimir
-  Date: 6/25/20
-  Time: 3:35 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Order</title>
+    <title>Title</title>
+    <style type="text/css">
+        .menu {
+            width: 400px;
+            background-color: lightblue;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
-<h1>Order</h1>
-<div>
-    <ul>
+<div class="menu">
+    <ul class="menu-items">
         <li><a href="main">Main Page</a></li>
         <li><a href="cart">Cart</a></li>
         <li><a href="order">Order</a></li>
@@ -21,5 +23,3 @@
         <li><a href="catalog">Catalog</a></li>
     </ul>
 </div>
-</body>
-</html>

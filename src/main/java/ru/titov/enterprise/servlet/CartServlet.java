@@ -12,7 +12,7 @@ import java.io.IOException;
 public class CartServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/cartJsp.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/cart.jsp");
         dispatcher.forward(req, resp);
     }
 }
