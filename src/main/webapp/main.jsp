@@ -1,3 +1,3 @@
-<%@include file="header.jsp"%>
+<%@include file="WEB-INF/header.jsp"%>
 <h1>Main page!</h1>
-<%@include file="footer.jsp"%>
+<%@include file="WEB-INF/footer.jsp"%>
