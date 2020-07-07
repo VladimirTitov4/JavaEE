@@ -1,3 +1,3 @@
-<%@include file="WEB-INF/header.jsp"%>
+<%@include file="header.jsp"%>
 <h1>Cart</h1>
-<%@include file="WEB-INF/footer.jsp"%>
+<%@include file="footer.jsp"%>
