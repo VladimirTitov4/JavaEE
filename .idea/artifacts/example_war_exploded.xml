@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="example:war exploded">
-    <output-path>$PROJECT_DIR$/target/example</output-path>
+    <output-path>$PROJECT_DIR$/target/example-1.0.0</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -13,9 +13,17 @@
         <element id="directory" name="classes">
           <element id="module-output" name="example" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:19.0.0" />
+          <element id="library" level="project" name="Maven: javax.enterprise:cdi-api:1.0" />
+          <element id="library" level="project" name="Maven: org.jboss.interceptor:jboss-interceptor-api:1.1" />
+          <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/example/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/example-1.0.0/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="example/web/Web" />
     </root>
