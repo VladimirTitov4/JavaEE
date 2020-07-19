@@ -8,7 +8,7 @@ public interface ProductRepository {
 
     Collection<Product> findAll();
 
-    Product findById(String id);
+    Product findById(Integer id);
 
     Product addProduct(Product product);
 }

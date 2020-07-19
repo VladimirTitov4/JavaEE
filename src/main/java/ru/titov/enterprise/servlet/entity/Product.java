@@ -3,11 +3,18 @@ package ru.titov.enterprise.servlet.entity;
 
 public class Product {
 
+    private static int id;
+
     private String name;
     private String description;
 
     public Product(String name) {
         this.name = name;
+        id++;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {
