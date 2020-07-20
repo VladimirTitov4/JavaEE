@@ -1,6 +1,6 @@
-package ru.titov.enterprise.servlet.repository;
+package ru.titov.enterprise.repository;
 
-import ru.titov.enterprise.servlet.entity.Product;
+import ru.titov.enterprise.entity.Product;
 
 import java.util.Collection;
 

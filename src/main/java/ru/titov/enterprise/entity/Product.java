@@ -1,4 +1,4 @@
-package ru.titov.enterprise.servlet.entity;
+package ru.titov.enterprise.entity;
 
 
 public class Product {
@@ -12,6 +12,8 @@ public class Product {
         this.name = name;
         id++;
     }
+
+    public Product() {}
 
     public int getId() {
         return id;
