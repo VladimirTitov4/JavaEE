@@ -22,6 +22,7 @@ public class ProductRepositoryBean implements ProductRepository {
 
     {
         products.put(0, new Product("product2"));
+        addProduct(new Product("product2"));
     }
 
     @Override
@@ -38,8 +39,8 @@ public class ProductRepositoryBean implements ProductRepository {
     @Override
     public Product addProduct(Product product) {
         if (product == null) return null;
-        final Integer id = product.getId();
-        products.put(id, product);
+
+        products.put(1, product);
         return product;
     }
 }
