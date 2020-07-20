@@ -35,18 +35,12 @@
       <scope>test</scope>
     </dependency>
 
-<<<<<<< HEAD
-=======
-    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
->>>>>>> master
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
       <scope>provided</scope>
     </dependency>
-
-<<<<<<< HEAD
     <dependency>
       <groupId>org.jetbrains</groupId>
       <artifactId>annotations</artifactId>
@@ -94,20 +88,4 @@
     </plugin>
   </plugins>
 </build>
-
-=======
-
-    <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-api</artifactId>
-      <version>7.0</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
-
-  <build>
-    <finalName>example</finalName>
-
-  </build>
->>>>>>> master
 </project>

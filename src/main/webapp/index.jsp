@@ -11,11 +11,10 @@
     <title>Welcome</title>
 </head>
 <body>
-<<<<<<< HEAD
+
 <h2>Hello World!!!</h2>
 <a href="/product-list">Product list:</a>
-=======
-<h1>Welcome!</h1>
->>>>>>> master
+
+
 </body>
 </html>
