@@ -3,7 +3,9 @@ package ru.titov.enterprise.servlet.product;
 import ru.titov.enterprise.constant.FieldConst;
 import ru.titov.enterprise.entity.Product;
 import ru.titov.enterprise.repository.ProductRepository;
+import ru.titov.enterprise.repository.ProductRepositoryBean;
 
+import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,6 +23,7 @@ public class ProductListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         final Collection<Product> products = productRepository.findAll();
         req.setAttribute(FieldConst.PRODUCTS, products);
         req.getRequestDispatcher("WEB-INF/views/products-list.jsp").forward(req, resp);

@@ -1,37 +1,26 @@
 package ru.titov.enterprise.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.jetbrains.annotations.Nullable;
 
-public class Product {
+@Getter
+@Setter
+@NoArgsConstructor
+public class Product extends AbstractEntity {
 
-    private static int id;
+    @Nullable
+    private String name = "";
 
-    private String name;
-    private String description;
+    @Nullable
+    private String description = "";
 
-    public Product(String name) {
+    public Product(@Nullable final String name) {
         this.name = name;
-        id++;
     }
 
-    public Product() {}
-
-    public int getId() {
+    public String getId() {
         return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 }
