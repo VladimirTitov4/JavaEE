@@ -3,5 +3,10 @@
 *.iml
 out/*
 target/*
+<<<<<<< HEAD
 *.log
 target
+=======
+.idea
+*.log
+>>>>>>> master
