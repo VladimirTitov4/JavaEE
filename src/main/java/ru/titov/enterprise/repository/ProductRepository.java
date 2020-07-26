@@ -1,14 +1,19 @@
 package ru.titov.enterprise.repository;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import ru.titov.enterprise.entity.Product;
 
 import java.util.Collection;
 
 public interface ProductRepository {
 
+    @NotNull
     Collection<Product> findAll();
 
-    Product findById(Integer id);
+    @Nullable
+    Product findById(@Nullable String id);
 
-    Product addProduct(Product product);
+    @Nullable
+    Product addProduct(@Nullable Product product);
 }

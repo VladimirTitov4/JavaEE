@@ -26,9 +26,8 @@ public class ProductRepositoryBean implements ProductRepository {
     }
 
     @Override
-    public Product findById(Integer id) {
-        if (!products.containsKey(id)) return null;
-        return products.get(id);
+    public @Nullable Product findById(@Nullable String id) {
+        return null;
     }
 
     @Nullable
