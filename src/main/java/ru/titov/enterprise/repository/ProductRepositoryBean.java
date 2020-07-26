@@ -16,7 +16,6 @@ public class ProductRepositoryBean implements ProductRepository {
 
     @PostConstruct
     private void init() {
-        System.out.println("postConstruct is here");
         addProduct(new Product("product1"));
     }
 

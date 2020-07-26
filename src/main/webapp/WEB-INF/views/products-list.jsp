@@ -2,25 +2,25 @@
 <%@ page import="java.util.Collection" %>
 <%@ page import="ru.titov.enterprise.entity.Product" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:include page="header.jsp">
+    <jsp:param name="title" value="Product list"/>
+</jsp:include>
+
 
 <%
     final Object productsObject = request.getAttribute(FieldConst.PRODUCTS);
     final Collection<Product> products = (Collection<Product>) productsObject;
 %>
-<html>
-<head>
-    <title>Products List</title>
-</head>
-<body>
+<h1 class="main-banner"> Список продуктов Java Store</h1>
+<%@ include file="menu.jsp"%>
+<div class="products">
 
-
-<h1>Список продуктов:</h1>
 
 <% for (final Product product : products) {%>
-
-    <p1><%= product.getId() %></p1>
-
+    <div class="product">
+        <p><%= product.getName() %></p>
+    </div>
 <% } %>
 
-</body>
-</html>
+</div>
+<%@ include file="footer.jsp"%>
