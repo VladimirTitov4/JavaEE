@@ -12,6 +12,8 @@
 </head>
 <body>
 
+<a href="/product-create">Создать новый продукт</a>
+
 <h2>Hello World!!!</h2>
 <a href="/product-list">Product list:</a>
 

@@ -12,13 +12,13 @@
     <title>Products List</title>
 </head>
 <body>
+
+
 <h1>Список продуктов:</h1>
 
 <% for (final Product product : products) {%>
 
     <p1><%= product.getId() %></p1>
-    <p1><%= product.getName() %></p1>
-    <p1><%= product.getDescription() %></p1>
 
 <% } %>
 

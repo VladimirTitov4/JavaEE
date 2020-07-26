@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Collection;
 
 @WebServlet(urlPatterns = "/product-list")
@@ -23,7 +24,6 @@ public class ProductListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         final Collection<Product> products = productRepository.findAll();
         req.setAttribute(FieldConst.PRODUCTS, products);
         req.getRequestDispatcher("WEB-INF/views/products-list.jsp").forward(req, resp);
